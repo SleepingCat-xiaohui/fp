@@ -2,8 +2,7 @@ import Phaser from 'phaser'
 
 export default class Preload extends Phaser.State {
   preload () {
-    const preloader = this.add.sprite(this.game.width / 2, this.game.height / 2, 'preloader')
-    preloader.anchor.setTo(0.5)
+    const preloader = this.add.sprite(this.game.width / 2 - 110, this.game.height / 2, 'preloader')
     this.load.setPreloadSprite(preloader)
 
     this.load.spritesheet('bird', '../assets/bird.png', 34, 24, 3)
